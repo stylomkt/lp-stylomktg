@@ -17,10 +17,13 @@ html {
 
 /* BOTAO DE WPP */
 .botao-wpp {
-    padding: .8rem 0.8rem;
+    transition: .2s;
+    padding: .5rem;
+    width: 40vw;
+    max-width: 500px;
     text-decoration: none;
     color: var(--text-base);
-    font-size: 200%;
+    font-size: 150%;
     font-weight: bold;
     background: #25D366;
     display: flex;
@@ -30,13 +33,28 @@ html {
     border: none;
 }
 
+.botao-wpp span {
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
 .botao-wpp svg {
+    transition: .2s;
     fill: white;
-    margin: 0 0 0 .5rem;
+    height: 100%;
+    width: 100%;
+    max-width: 40px;
 }
 
 .botao-wpp:hover {
-    transform: scale(1.1);
+    transform: scale(1.03);
+    background: var(--text-base);
+    color: #25D366;
+}
+
+.botao-wpp:hover svg {
+    fill: #25D366;
 }
 
 /* HEADER  */
@@ -44,7 +62,7 @@ header {
     padding: 1rem 0;
 }
 
-header svg {
+header img {
     height: 100%;
     max-height: 80px;
     display: block;
@@ -85,7 +103,3 @@ header svg {
 #secao-01 article {
     display: flex;
 }
-
-#secao-01 article div {
-}
-
