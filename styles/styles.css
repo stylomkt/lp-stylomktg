@@ -12,18 +12,18 @@
 
 html {
     background: #150A2B;
-    color: var(--text-base)
+    color: var(--text-base);
+    overflow-x: hidden;
 }
 
 /* BOTAO DE WPP */
 .botao-wpp {
     transition: .2s;
     padding: .5rem;
-    width: 50vw;
-    max-width: 500px;
+    width: 35vw;
     letter-spacing: 3px;
     color: var(--text-base);
-    font-size: 150%;
+    font-size: calc(100vw / 60);
     font-weight: bold;
     background: #25D366;
     display: flex;
@@ -43,8 +43,7 @@ html {
     transition: .2s;
     fill: white;
     height: 100%;
-    width: 100%;
-    max-width: 40px;
+    width: 15%;
 }
 
 .botao-wpp:hover {
@@ -81,13 +80,13 @@ header img {
 }
 
 #secao-01 h2 {
-    font-weight: 400;
-    font-size: 300%;
-    padding: 1rem 0 0;
+    font-weight: 200;
+    font-size: calc(100vw / 25);
+    padding: 3rem 0 1rem;
 }
 
 #secao-01 h1 {
-    font-size: 400%;
+    font-size: calc(100vw / 20);
     padding: 0rem 0 1rem;
 }
 
@@ -101,32 +100,46 @@ h2 span, h1 span, p span {
 }
 
 #secao-01 article {
+    position: relative;
     display: flex;
     justify-content: space-between;
+    padding: 0 0 2rem;
 }
 
 #secao-01 article div {
-    position: relative;
+    z-index: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 50%;
 }
 
 .conteudo-apresentacao-1 p{
-    font-size: 200%;
+    font-size: calc(100vw / 50);
     text-align: center;
-    width: 40%;
+    width: 70%;
     font-weight: bold;
+    margin: 0 0 3rem
+}
+
+.advogada {
+    width: calc(100vw * 0.35)
 }
 
 .sinuosa {
     position: absolute;
-    width: 50%;
-    height: 50%;
+    /* width: 70%; */
+    height: calc(100vw / 5)
 }
 
 .sinuosa-01 {
-    /* left: calc(0 - 50); */
+    bottom: 4%;
+    left: -10%;
+}
 
+.sinuosa-02 {
+    right: calc(100vw / 10000);
+    top: -30%;
+    height: calc(100vw / 3);
 }
