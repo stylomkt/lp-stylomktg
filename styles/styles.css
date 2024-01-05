@@ -19,9 +19,9 @@ html {
 .botao-wpp {
     transition: .2s;
     padding: .5rem;
-    width: 40vw;
+    width: 50vw;
     max-width: 500px;
-    text-decoration: none;
+    letter-spacing: 3px;
     color: var(--text-base);
     font-size: 150%;
     font-weight: bold;
@@ -91,7 +91,7 @@ header img {
     padding: 0rem 0 1rem;
 }
 
-#secao-01 h2 span, #secao-01 h1 span, #secao-01 p span {
+h2 span, h1 span, p span {
     color: var(--text-emphasis)
 }
 
@@ -102,4 +102,31 @@ header img {
 
 #secao-01 article {
     display: flex;
+    justify-content: space-between;
+}
+
+#secao-01 article div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteudo-apresentacao-1 p{
+    font-size: 200%;
+    text-align: center;
+    width: 40%;
+    font-weight: bold;
+}
+
+.sinuosa {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+}
+
+.sinuosa-01 {
+    /* left: calc(0 - 50); */
+
 }
