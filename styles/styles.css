@@ -143,3 +143,16 @@ h2 span, h1 span, p span {
     top: -30%;
     height: calc(100vw / 3);
 }
+
+/* SECAO 02 */
+.titulo-motivos-lp h1 {
+    text-transform: uppercase;
+    font-size: calc(100vw / 25);
+    font-weight: 300;
+    text-align: center;
+}
+
+.titulo-motivos-lp span h1 {
+    font-weight: bolder;
+}
+
