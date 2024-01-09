@@ -8,10 +8,12 @@
 :root {
     --text-base: #ebebeb;
     --text-emphasis: #38B6FF;
+    --black-purple: #150A2B;
+    --gray-purple: #21133D;
 }
 
 html {
-    background: #150A2B;
+    background: var(--black-purple);
     color: var(--text-base);
     overflow-x: hidden;
 }
@@ -19,7 +21,7 @@ html {
 /* BOTAO DE WPP */
 .botao-wpp {
     transition: .2s;
-    padding: .5rem;
+    padding: .5rem 1rem;
     width: 35vw;
     letter-spacing: 3px;
     color: var(--text-base);
@@ -29,7 +31,7 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-radius: 1.5rem;
+    border-radius: 2rem;
     border: none;
 }
 
@@ -43,7 +45,7 @@ html {
     transition: .2s;
     fill: white;
     height: 100%;
-    width: 15%;
+    width: 10%;
 }
 
 .botao-wpp:hover {
@@ -71,7 +73,7 @@ header img {
 /* SECAO 01 */
 
 #secao-01 {
-    background: #21133D;
+    background: var(--gray-purple);
 }
 
 #secao-01 h2, #secao-01 h1 {
@@ -145,14 +147,87 @@ h2 span, h1 span, p span {
 }
 
 /* SECAO 02 */
-.titulo-motivos-lp h1 {
+.header-sec h1 {
     text-transform: uppercase;
     font-size: calc(100vw / 25);
     font-weight: 300;
     text-align: center;
 }
 
-.titulo-motivos-lp span h1 {
-    font-weight: bolder;
+h1.porem {
+    margin: 2rem 0 0 0;
 }
 
+.header-sec span h1 {
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+.motivos {
+    display: flex;
+    gap: 3rem;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.motivo {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    min-height: 50vh;
+    font-size: 130%;
+    text-align: center;
+    background: var(--gray-purple);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: 33%;
+}
+
+.motivo svg {
+    height: 100%;
+    width: 25%;
+    fill: white;
+}
+
+.motivo span {
+    font-weight: 800;
+    font-size: 150%;
+}
+
+.motivo-desc p{
+    padding: 0 1rem
+} 
+
+.container-botao-wpp {
+    margin: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* SECAO 04 */
+#secao-04 h2, #secao-05 .desc h2 {
+    text-align: center;
+    padding: 5vw 6rem 3vw;
+    font-size: 180%;
+}
+
+/* SECAO 05 */
+#secao-05{
+    background: var(--gray-purple);
+    padding: 2rem 0 3rem
+}
+
+.projetos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.projeto {
+    text-align: center;
+}
+
+.projeto h2 {
+    margin: 1rem 0;
+}
