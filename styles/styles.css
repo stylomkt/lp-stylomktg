@@ -27,14 +27,13 @@ svg{
 .botao-wpp {
     transition: .2s;
     padding: .5rem 1rem;
-    width: 35vw;
+    min-width: 35vw;
     letter-spacing: 3px;
     color: var(--text-base);
     font-size: calc(100vw / 60);
     font-weight: bold;
     text-decoration: none;
-    background: var(--whatsapp-color)
-    ;
+    background: var(--whatsapp-color);
     color: white;
     display: flex;
     align-items: center;
@@ -173,6 +172,8 @@ h1.porem {
 
 .motivos {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 3rem;
     width: 95%;
     margin: 0 auto;
@@ -284,7 +285,7 @@ footer{
     color: white;
     padding: 1rem;
     border-radius: 50%;
-    box-shadow: 0.3rem 0.3rem rgba(0, 0, 0, 0.651);
+    filter: drop-shadow(3px 3px 0px #00000088)
 }
 
 .fixed-wpp a{
