@@ -27,6 +27,7 @@ html {
     color: var(--text-base);
     font-size: calc(100vw / 60);
     font-weight: bold;
+    text-decoration: none;
     background: #25D366;
     display: flex;
     align-items: center;
