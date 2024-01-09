@@ -278,6 +278,7 @@ footer{
     color: white;
     padding: 1rem;
     border-radius: 50%;
+    box-shadow: 0.3rem 0.3rem rgba(0, 0, 0, 0.651);
 }
 
 .fixed-wpp a{
