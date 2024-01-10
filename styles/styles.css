@@ -125,7 +125,7 @@ h2 span, h1 span, p span {
 }
 
 .conteudo-apresentacao-1 p{
-    font-size: calc(100vw / 50);
+    font-size: calc(100vw / 40);
     text-align: center;
     width: 70%;
     font-weight: bold;
@@ -133,7 +133,8 @@ h2 span, h1 span, p span {
 }
 
 .advogada {
-    width: calc(100vw * 0.35)
+    width: calc(100vw * 0.40);
+    max-width: 500px;
 }
 
 .sinuosa {
@@ -154,9 +155,9 @@ h2 span, h1 span, p span {
 }
 
 /* SECAO 02 */
-.header-sec h1 {
+.header-sec h1 { 
     text-transform: uppercase;
-    font-size: calc(100vw / 25);
+    font-size: calc(100vw / 20);
     font-weight: 300;
     text-align: center;
 }
@@ -189,7 +190,7 @@ h1.porem {
     background: var(--gray-purple);
     border-radius: 1rem;
     padding: 2rem;
-    width: 33%;
+    width: 400px
 }
 
 .motivo svg {
@@ -242,8 +243,15 @@ h1.porem {
 }
 
 /* SECAO 06 */
-.conteudo-areas{
+
+.conteudo {
     display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.conteudo-lp .conteudo:nth-of-type(2n - 1) {
+    background-color: var(--gray-purple);
 }
 
 .conteudo-conhec{
@@ -256,18 +264,26 @@ h1.porem {
 
 #secao-06 .conteudo-lp h1{
     text-align: center;
-    font-size: 180%;
-    margin: 3rem;
+    font-size: 180%;   
+    margin: 0 0 1rem
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 #secao-06 p{
     text-align: center;
     font-size: 130%;
-    margin: 3rem;
+    padding: 0 3rem;
 }
 
 #secao-06 img{
-    width: calc(100vw * 0.35)
+    width: calc(100vw * 0.35);
+    max-width: 400px;
 }
 
 footer{
@@ -285,7 +301,10 @@ footer{
     color: white;
     padding: 1rem;
     border-radius: 50%;
-    filter: drop-shadow(3px 3px 0px #00000088)
+    filter: drop-shadow(3px 3px 0px #00000088);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .fixed-wpp a{
