@@ -32,6 +32,7 @@ svg{
     color: var(--text-base);
     font-size: calc(100vw / 60);
     font-weight: bold;
+    text-decoration: none;
     background: var(--whatsapp-color);
     color: white;
     display: flex;
@@ -360,9 +361,9 @@ h1.porem {
     margin: 0 auto;
 }
 
-.conteudo-lp .conteudo:nth-of-type(2n - 1) {
+/*.conteudo-lp .conteudo:nth-of-type(2n - 1) {
     background-color: var(--gray-purple);
-}
+}*/
 
 .conteudo-conhec{
     display: flex;
